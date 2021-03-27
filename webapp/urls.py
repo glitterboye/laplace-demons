@@ -6,6 +6,5 @@ from . import views
 urlpatterns = [
     path('', views.home, name='home'), # views.index is calling fxn
 
-    # adding another possible path
-    path('nest/', views.nest, name='nest'),
+    # TODO add another possible path
 ]
