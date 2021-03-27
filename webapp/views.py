@@ -5,5 +5,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def index(request):
-    return HttpResponse("Hello, User. You are the views.py page")
+# home method accepts a request
+def home(request):
+    return HttpResponse("Welcome! You are now looking at the views DOT home page.")
+
+
+# Can I put a second function here?
+def nest(request):
+    return HttpResponse("It seems like you have now entered views DOT nest. Enjoy your stay!")
