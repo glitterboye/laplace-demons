@@ -6,4 +6,4 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 
-# This should be seen
+# Hello Clara
