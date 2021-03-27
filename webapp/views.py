@@ -6,4 +6,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, User. You are at the HOME index.")
+    return HttpResponse("Hello, User. You are the views.py page")
