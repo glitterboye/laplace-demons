@@ -11,12 +11,12 @@
     body {background-image: linear-gradient(white, lightblue);}
     h1   {color: blue;}
     h2   {color: blue;}
+
     /* Add a black background color to the top navigation */
         .topnav {
   background-color: #333;
   overflow: hidden;
 }
-
 /* navigation bar style */
 .topnav a {
   float: left;
@@ -38,7 +38,10 @@
   background-color: darkgray;
   color: white;
 }
+    h1   {text-align: center;}
     div   {color: blue;}
+
+    div   {margin: auto;}
 
   </style>
 </head>
@@ -47,14 +50,13 @@
 
 <div class="topnav">
   <a class="active" href="#home">Home</a>
-  <a href="#news">Find a Professor</a>
-  <a href="#contact">Rate a Professor</a>
+  <a href="#findProf">Find a Professor</a>
+  <a href="#rateProf">Rate a Professor</a>
   <a href="#about">About Us</a>
   <a href="#account">My Account</a>
 </div>
 
-<h1>Successfully Logged In</h1>
-<h2>Welcome, {{ name }}. </h2>
+<h1>Welcome, {{ name }}! </h1>
 <p1>
 
 <div class="container">
@@ -64,7 +66,7 @@
       <label for="profname">Professor Name</label>
     </div>
     <div class="col-75">
-      <input type="text" id="profname" name="profname" placeholder="Enter name...">
+      <input type="text" id="profname" name="profname" placeholder="Enter name..." style="height:30px; width: 75% ">
     </div>
   </div>
   <div class="row">
@@ -72,15 +74,16 @@
           <label for="slidecontainer">Asynchronous friendliness?</label>
       </div>
   </div>
+
     <div class="slidecontainer">
         <input type="range" min="1" max="10" value="5" class="slider" id="asynchronous">
     </div>
-  <div class="row">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <div class="row">
     <div class="col-25">
       <label for="comments>Comments</label>
     </div>
     <div class="col-75">
-      <textarea id="comments" name="comments" placeholder="Any comments?" style="height:200px"></textarea>
+      <textarea id="comments" name="comments" placeholder="Any comments?" style="height:300px; width: 75% "></textarea>
     </div>
   </div>
   <div class="row">
