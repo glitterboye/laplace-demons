@@ -1,0 +1,15 @@
+h1 {
+    color: midnightblue;
+    font-family: "Calibri Light";
+    font-size: 200%;
+}
+
+h2 {
+    color: maroon;
+    font-family: "Calibri Light";
+    font-size: 160%;
+}
+
+p {
+    margin: 50px;
+}
