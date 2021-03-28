@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<head>
+
+  <link rel="stylesheet" href='..templates/styles.css'>
+
+
+  <style>
+    body {background-image: linear-gradient(white, lightblue);}
+    h1   {color: blue;}
+    h2   {color: blue;}
+
+    /* Add a black background color to the top navigation */
+        .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+/* navigation bar style */
+.topnav a {
+  float: left;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px 100px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: darkgray;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: darkgray;
+  color: white;
+}
+    h1   {text-align: center;}
+    div   {color: blue;}
+
+    div   {margin: auto;}
+
+  </style>
+</head>
+
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#findProf">Find a Professor</a>
+  <a href="#rateProf">Rate a Professor</a>
+  <a href="#about">About Us</a>
+  <a href="#account">My Account</a>
+</div>
+
+<h1>Welcome, {{ name }}! </h1>
+</body>
+
+{% endblock %}
